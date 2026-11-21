@@ -1,0 +1,30 @@
+# Build directory
+build/
+
+# Compiled object files
+*.o
+*.obj
+*.d
+
+# Compiled libraries
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Executables and firmware
+*.exe
+*.elf
+*.hex
+*.eep
+*.map
+*.lst
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Temporary editor files
+*~
+*.swp
