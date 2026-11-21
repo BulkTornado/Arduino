@@ -7,7 +7,7 @@ wherever you see a checkbox like `- [ ]`, that is a step to do. when the doc say
 - [ ] If on Windows
   - only for the following installation steps, run every command in administrative `PowerShell`, unless instructed to run in `GitBash`
   - to open administrative `PowerShell`: press the `Start` button, type `PowerShell`, right-click on it, and click `Run as administrator`.
-  - if `winget` says it is "not recognized", open the Microsoft Store, search for `App Installer`, and install or update it. then try again.
+  - run `winget --version`. if `winget` says it is "not recognized", open the Microsoft Store, search for `App Installer`, and install or update it. then try again. otherwise, continue reading.
   - after ALL of the installation on Windows is completed, always use `GitBash` as the primary terminal, unless instructed to use `PowerShell`.
   - [ ] install `GitBash`
     - [ ] run `winget install --id Git.Git -e`
@@ -21,9 +21,6 @@ wherever you see a checkbox like `- [ ]`, that is a step to do. when the doc say
       - [ ] in the **top** box (`User variables for <your username>`), click on `Path`, and then on `Edit...`.
       - [ ] click on `New`, paste `C:\Program Files\LLVM\bin`, and press `Enter`.
       - [ ] click `OK` at the bottom right on all the windows to close them.
-    - [ ] on Windows, `clang` also needs the C/C++ standard headers that come with Microsoft's `Build Tools`. without them, you will get `'stdio.h' file not found` when compiling later.
-      - [ ] open [https://visualstudio.microsoft.com/downloads](https://visualstudio.microsoft.com/downloads), scroll down to `All Downloads`, open `Tools for Visual Studio`, and download `Build Tools for Visual Studio`.
-      - [ ] run the installer, check the `Desktop development with C++` workload, and click `Install`. this is a big download and takes a while, so grab a snack.
     - [ ] open a **new** `GitBash` from the start menu (an already open one won't see the changes).
     - [ ] run `clang --version`, and send a photo of the output in the group.
   - [ ] install `make`
